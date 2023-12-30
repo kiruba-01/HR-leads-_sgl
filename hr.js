@@ -93,3 +93,23 @@ if (enteredValue >= 50 && enteredValue <= 1000 ){
 
 }
 
+
+
+var acc = document.getElementsByClassName("pop-up");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+   
+    this.classList.toggle("active");
+
+    
+    var addtion = this.nextElementSibling;
+    if (addtion.style.display === "block") {
+      addtion.style.display = "none";
+    } else {
+      addtion.style.display = "block";
+    }
+  });
+}
+

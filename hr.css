@@ -1,15 +1,103 @@
 body{
   margin-block-start: 5em;
   margin-block-end: 0em; 
-/* background-color:yellow; */
 }
+.pop-up img{
+  background-color:transparent;
+  background: #0066cc;
+  width: 60px;
+  height: 60px;
+  border:none;
+  border-radius:60px; 
+  right: 10px;
+  bottom: 10px;
+  position: fixed;
+  cursor: pointer;
+}
+.addtion{
+  display: flex;
+  flex-direction: column;
+  width: 26.1rem;
+  height: 28rem;
+  box-sizing: border-box;
+  border: 1px solid #f4f4f4;
+  border-radius: 1rem;
+  display: none;
+   overflow: hidden;
+   float: right;
+}
+.hed1{
+  background-color: #0066cc;
+  width: 25rem;
+  height: 6rem;
+  border-radius: 1rem;
+  color: whitesmoke;
+  padding-left: 18px;
+  text-align: center;
+}
+.h{
+  font-style:salesiq-font;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: normal;
+}
+.input-01 input{
+  background: #f4f4f4;
+  width: 22rem;
+  height: 3rem;
+  outline: none;
+  border: 1px solid rgb(248, 233, 233);
+  font-size: 0.8rem;
+  padding-left: 8px;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  border-radius: 1rem;
+}
+.input-02 input{
+  background: #f4f4f4;
+  width: 22rem;
+  height: 3rem;
+  outline: none;
+  border: 1px solid rgb(248, 233, 233);
+  font-size: 0.8rem;
+  padding-left: 8px;
+  margin-top: 1rem;
+  margin-left:1.5rem;
+  border-radius: 1rem;
+}
+.input-03 input{
+  background: #f4f4f4;
+  width: 22rem;
+  height: 8rem;
+  outline: none;
+  border: 1px solid rgb(248, 233, 233);
+  font-size: 0.8rem;
+  padding-left: 8px;
+  margin-top: 1rem;  
+  border-radius: 1rem;
+  margin-left:1.5rem;
+  
+}
+.ra-one{
+  border: none;
+  font-size: 0.8rem;
+  color: #dedede;
+  margin-left:20rem;
+  margin-top: 2rem;
+  background: none;
+}
+.ra-one::before{
+  content: '>>';
+  font-size: 0.8rem;
+  color: #dedede;
+  margin-top: 2rem;
+}
+  
 .heading-work{
   display:flex;
    width:83rem;
    height:20vh;
    border-radius:6rem;
-   
-    
  }
  .header-icon{
    width:6rem;
@@ -114,7 +202,7 @@ body{
    padding-left:1.1rem;
      height: 2.5rem;
      border-radius:5rem;
-   border-color:#2B56A7;
+   border: 0.5px solid rgb(209 213 219);
     outline:none;
      font-family: Helvetica;
    background:#FFFFFF;
@@ -264,7 +352,6 @@ body{
      color: #495057;
      padding: 0 0.3rem;
      font-size: 1rem;
-     /* border-size:0px; */
    border-radius:10px;
    border-color:#495057;
      cursor: pointer;
@@ -354,6 +441,7 @@ body{
    transition: 0.4s;
   font-size: 1rem;
   box-sizing: border-box;
+  font-weight: 500;
   border:1px solid #e5e7eb;
   opacity: 0.9;
   background: rgb(255 255 255);
@@ -393,7 +481,7 @@ color: #007bff;
  .overall-flex{
   width:98vw;
    height:52vh;
-   margin-top:7rem;
+   margin-top:18rem;
  }
  .flex-row{
    display:grid;
@@ -461,6 +549,7 @@ color: #007bff;
    flex-wrap: wrap;
    margin-left:3.5rem;
    margin-top:-3rem;
+   cursor: pointer;
  }
  .innerflex{
     padding-top:3rem;
@@ -476,6 +565,8 @@ color: #007bff;
     font-weight:500;
    font-style:Helvetica;
    margin-left:4rem;
+   cursor: pointer;
+
   }
   .innerflex :hover{
     border-bottom: 1px solid black;
@@ -495,6 +586,8 @@ color: #007bff;
    font-style:Helvetica;
    margin-left:4rem;
    width: 72rem;
+   cursor: pointer;
+
   }
  .flexsecond :hover{
   border-bottom: 1px solid black;
@@ -513,6 +606,8 @@ color: #007bff;
     font-weight:500;
    font-style:Helvetica;
    margin-left:4rem;
+   cursor: pointer;
+
  }
  .flexthrid :hover{
   border-bottom: 1px solid black;
@@ -607,6 +702,7 @@ color: #007bff;
     background-color:lightgrey;
     border-radius: 0.7rem;
     border-color: none;
+    float: left;
   }
   
 .lead{
@@ -853,6 +949,9 @@ border:0.1rem solid #DC1735;
   gap: 3rem;
   padding-left: 1rem;
 
+}
+.pop-up{
+  display: none;
 }
 }
 @media only screen and (max-width: 500px){
